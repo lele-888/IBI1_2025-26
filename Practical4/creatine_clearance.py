@@ -9,10 +9,10 @@
 #    CrCl = ((140 - age) * weight) / (72 * Cr)
 #    If female, multiply result by 0.85
 # 5. Print the final CrCl result or the error message for invalid inputs
-age = 55         
-weight = 70       
-gender = "female" 
-cr = 80          
+age =int(input("Enter your age(year):"))         
+weight =int(input("Enter your weight(kg):"))       
+gender = input("Enter your gender:")
+cr = float(input("Enter your creatinine(µmol/l):"))          
 errors = []
 if age >= 100:
     errors.append("Age must be less than 100 years.")
